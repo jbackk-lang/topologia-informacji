@@ -68,4 +68,4 @@ warunków stabilności, a także sprzężenie zwrotne φ.
 
 ## 🔷 Licencja
 
-MIT (lub inna, jeśli zostanie wybrana później)
+MIT
