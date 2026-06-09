@@ -92,6 +92,20 @@ Innymi słowy:
 > Wzrost ρ lub ΔS jest sygnałem, że **diabeł siedzi w założeniach**,  
 > a nie w rachunku.
 
+## R15. (Zakaz mnożenia nieskończoności — ∞ jest unikalne)
+
+W topologii informacji nieskończoność ∞ jest **jedynym brzegiem
+kierunkowym** i nie może być duplikowana ani rozszczepiana na ∞₁,
+∞₂, ∞₃. Próba wprowadzenia wielu nieskończoności prowadzi do
+sprzeczności topologicznej: brzeg przestaje być brzegiem, a
+przestrzeń traci spójność.
+
+Dodawanie „drugiej nieskończoności” jest próbą ratowania modeli
+opartych na błędnym założeniu ciągłości między ∂₀ i ∂∞. W TIMDR
+nieskończoność jest **kierunkiem**, nie wartością ani miejscem,
+dlatego nie może istnieć jej kopia ani wariant.
+
+
 ---
 
 ## 🔷 Licencja
