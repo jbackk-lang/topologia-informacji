@@ -21,6 +21,15 @@ warunków stabilności, a także sprzężenie zwrotne φ.
 - **ρ** — gęstość informacyjna
 - **φ** — sprzężenie zwrotne
 
+/applications/
+    ├── text-analysis.md
+    ├── ai-diagnostics.md
+    ├── overload-detection.md
+    ├── stability-engineering.md
+    ├── semantic-topology.md
+    └── timdr-real-world.md
+
+
 ---
 
 ## 🔷 Operatory
