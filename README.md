@@ -1,113 +1,122 @@
-# Topologia Informacji — Model 2.1
+# Topologia Informacji — Model 2.1  
+### Formalny model ruchu, transformacji i stabilności informacji  
+(oparty na jednostkach, operatorach, regułach i sprzężeniu zwrotnym φ)
 
-Topologia Informacji to formalny model opisujący ruch, transformację i stabilność informacji
-w ujęciu topologicznym. Model 2.1 zawiera pełny zestaw jednostek, operatorów, reguł oraz
-warunków stabilności, a także sprzężenie zwrotne φ.
+Topologia Informacji 2.1 to kompletny model opisujący **jak informacja porusza się, zmienia, skręca, rezonuje i stabilizuje się** w przestrzeni topologicznej.  
+Model definiuje pełny zestaw **jednostek**, **operatorów**, **reguł**, **warunków stabilności** oraz **sprzężenie zwrotne φ** .
 
 ---
 
-## 🔷 Jednostki
+## 1. Jednostki (alfabet topologiczny)
 
-- **I** — informacja (ruch)
-- **S** — kształt
-- **T** — transformacja globalna
-- **Tw** — skręt lokalny
-- **ΔS** — różnica kształtu z progiem
-- **N** — napięcie
-- **R** — rezonans
-- **Ø** — zero topologiczne
-- **Λ** — amplituda zmiany
-- **τ** — orientacja czasowa
-- **ρ** — gęstość informacyjna
-- **φ** — sprzężenie zwrotne
+Model używa 13 jednostek opisujących różne aspekty informacji:
 
-/applications/
-    ├── text-analysis.md
-    ├── ai-diagnostics.md
-    ├── overload-detection.md
-    ├── stability-engineering.md
-    ├── semantic-topology.md
-    └── timdr-real-world.md
+- **I** — informacja (ruch)  
+- **S** — kształt  
+- **T** — transformacja globalna  
+- **Tw** — skręt lokalny  
+- **ΔS** — różnica kształtu z progiem  
+- **N** — napięcie  
+- **R** — rezonans  
+- **Ø** — zero topologiczne  
+- **Λ** — amplituda zmiany  
+- **τ** — orientacja czasowa  
+- **ρ** — gęstość informacyjna  
+- **φ** — sprzężenie zwrotne  
 
 
 ---
 
-## 🔷 Operatory
+## 2. Operatory
 
-- `I → S`
-- `T(I, Λ)`
-- `Tw(I, Λ)`
-- `ΔS(ρ, ρ*)`
-- `S↻(τ)`
-- `S↺`
-- `S ⊗ S`
-- `Res(S₁, S₂)`
-- `φ(S)`
-- `N`
-- `Ø`
+Model definiuje operatory przekształcające informację:
 
----
+- **I → S**  
+- **T(I, Λ)**  
+- **Tw(I, Λ)**  
+- **ΔS(ρ, ρ\*)**  
+- **S↻(τ)**  
+- **S↺**  
+- **S ⊗ S**  
+- **Res(S₁, S₂)**  
+- **φ(S)**  
+- **N**, **Ø**  
 
-## 🔷 Reguły
 
-- **R1–R7** — reguły podstawowe
-- **R8** — skala zmienia klasę topologiczną
-- **R9** — orientacja czasowa określa trajektorię
-- **R10** — gęstość decyduje o stabilności cyklu
+Każdy operator zmienia klasę topologiczną, orientację, gęstość lub stabilność.
 
 ---
 
-## 🔷 Warunki stabilności
+## 3. Reguły (R1–R10 + rozszerzenia)
 
-- `Λ_eff = Λ · τ`
-- `ρ < ρ_krytyczne`
-- `|ρ₁ – ρ₂| > ρ*` dla aktywacji ΔS
+- **R1–R7** — reguły podstawowe  
+- **R8** — skala zmienia klasę topologiczną  
+- **R9** — orientacja czasowa określa trajektorię  
+- **R10** — gęstość decyduje o stabilności cyklu  
+
+
+Dodatkowo repo zawiera:
+
+### **R15 — Zakaz mnożenia nieskończoności**  
+Nieskończoność **jest unikalna** i nie może być kopiowana ani rozszczepiana na ∞₁, ∞₂, ∞₃  
+.
+
+Duplikacja ∞ niszczy brzeg kierunkowy i spójność przestrzeni  
+.
 
 ---
 
-## 🔷 Zawartość repo
+## 4. Warunki stabilności
 
-- `/axioms` — reguły i warunki stabilności
-- `/operators` — definicje operatorów
-- `/filter` — wersje filtra (2.0, 2.1, 2.2)
-- `/mapping` — mapowanie topologii na architekturę AI i odwrotnie
-- `/examples` — przykłady zastosowań (torus-Möbius, TIMDR)
+Model definiuje trzy kluczowe warunki:
+
+- **Λ_eff = Λ · τ**  
+- **ρ < ρ_krytyczne**  
+- **|ρ₁ – ρ₂| > ρ\*** dla aktywacji ΔS  
+
+
+To pozwala wykrywać stabilne i niestabilne cykle informacji.
 
 ---
-## Reguła ρ/ΔS → sprawdzanie założeń
 
-**R10. (Diagnoza założeń)**  
+## 5. Reguła ρ/ΔS — diagnoza założeń
+
 Jeśli w analizie problemu:
 
-- współczynnik gęstości ρ rośnie monotonicznie,
-- albo różnica kształtu ΔS rośnie w kolejnych krokach,
+- **ρ rośnie monotonicznie**, albo  
+- **ΔS rośnie w kolejnych krokach**,  
 
-to:
+to problem leży **w założeniach**, a nie w rachunku  
+.
 
-1. Najpierw badamy **założenia problemu** (modelu, równania, funkcji),
-2. Dopiero potem szukamy „lepszego dowodu” lub „sprytniejszej techniki”.
-
-Innymi słowy:
-
-> Wzrost ρ lub ΔS jest sygnałem, że **diabeł siedzi w założeniach**,  
-> a nie w rachunku.
-
-## R15. (Zakaz mnożenia nieskończoności — ∞ jest unikalne)
-
-W topologii informacji nieskończoność ∞ jest **jedynym brzegiem
-kierunkowym** i nie może być duplikowana ani rozszczepiana na ∞₁,
-∞₂, ∞₃. Próba wprowadzenia wielu nieskończoności prowadzi do
-sprzeczności topologicznej: brzeg przestaje być brzegiem, a
-przestrzeń traci spójność.
-
-Dodawanie „drugiej nieskończoności” jest próbą ratowania modeli
-opartych na błędnym założeniu ciągłości między ∂₀ i ∂∞. W TIMDR
-nieskończoność jest **kierunkiem**, nie wartością ani miejscem,
-dlatego nie może istnieć jej kopia ani wariant.
+> „Wzrost ρ lub ΔS jest sygnałem, że diabeł siedzi w założeniach.”  
 
 
 ---
 
-## 🔷 Licencja
+## 6. Zawartość repozytorium
 
-MIT
+```
+/axioms      — reguły i warunki stabilności
+/operators   — definicje operatorów
+/filter      — wersje filtra (2.0, 2.1, 2.2)
+/mapping     — mapowanie topologii na architekturę AI
+/examples    — przykłady (torus–Möbius, TIMDR)
+```
+
+
+---
+
+## 7. Powiązania z innymi modelami
+
+- **TIMDR** — topologia informacji → dynamika czasu i rezonansu  
+- **FIELDCORE** — pole i rezonanse → fizyczna interpretacja operatorów  
+- **fundamental‑ai‑model** — mapowanie topologii na architekturę AI  
+- **MAPA‑PO‑HELU** — struktura materii jako zastosowanie operatorów i reguł  
+
+---
+
+## 8. Licencja
+
+MIT License  
+
