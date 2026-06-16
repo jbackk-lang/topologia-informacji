@@ -1,122 +1,101 @@
-# Topologia Informacji — Model 2.1  
-### Formalny model ruchu, transformacji i stabilności informacji  
-(oparty na jednostkach, operatorach, regułach i sprzężeniu zwrotnym φ)
+# Topologia Informacji — Framework Koncepcyjny Λ–τ–ρ
 
-Topologia Informacji 2.1 to kompletny model opisujący **jak informacja porusza się, zmienia, skręca, rezonuje i stabilizuje się** w przestrzeni topologicznej.  
-Model definiuje pełny zestaw **jednostek**, **operatorów**, **reguł**, **warunków stabilności** oraz **sprzężenie zwrotne φ** .
+**Topologia Informacji** to centralny element stosu Λ–τ–ρ.  
+Opisuje informację nie jako dane, lecz jako **strukturę**, **skręt** i **rezonans**  
+w sensie **koncepcyjnym**, a nie fizycznym czy matematycznym.
 
----
-
-## 1. Jednostki (alfabet topologiczny)
-
-Model używa 13 jednostek opisujących różne aspekty informacji:
-
-- **I** — informacja (ruch)  
-- **S** — kształt  
-- **T** — transformacja globalna  
-- **Tw** — skręt lokalny  
-- **ΔS** — różnica kształtu z progiem  
-- **N** — napięcie  
-- **R** — rezonans  
-- **Ø** — zero topologiczne  
-- **Λ** — amplituda zmiany  
-- **τ** — orientacja czasowa  
-- **ρ** — gęstość informacyjna  
-- **φ** — sprzężenie zwrotne  
-
+To **nie jest teoria naukowa**,  
+**nie jest modelem empirycznym**,  
+ale **mapa orientacyjna**, która pozwala patrzeć na informację  
+jak na proces topologiczny.
 
 ---
 
-## 2. Operatory
+## 1. Trzy Operatory: Λ — τ — ρ
 
-Model definiuje operatory przekształcające informację:
+### **Λ — Struktura**  
+Forma, układ, geometria relacji.  
+Metafora „kształtu informacji”.
 
-- **I → S**  
-- **T(I, Λ)**  
-- **Tw(I, Λ)**  
-- **ΔS(ρ, ρ\*)**  
-- **S↻(τ)**  
-- **S↺**  
-- **S ⊗ S**  
-- **Res(S₁, S₂)**  
-- **φ(S)**  
-- **N**, **Ø**  
+### **τ — Transformacja (skręt)**  
+Zmiana, przejście, orientacja.  
+Metafora dynamiki i kierunku.
 
+### **ρ — Defekt / Napięcie**  
+Odchylenie od idealnej struktury.  
+Metafora niestabilności i punktów przejścia.
 
-Każdy operator zmienia klasę topologiczną, orientację, gęstość lub stabilność.
-
----
-
-## 3. Reguły (R1–R10 + rozszerzenia)
-
-- **R1–R7** — reguły podstawowe  
-- **R8** — skala zmienia klasę topologiczną  
-- **R9** — orientacja czasowa określa trajektorię  
-- **R10** — gęstość decyduje o stabilności cyklu  
-
-
-Dodatkowo repo zawiera:
-
-### **R15 — Zakaz mnożenia nieskończoności**  
-Nieskończoność **jest unikalna** i nie może być kopiowana ani rozszczepiana na ∞₁, ∞₂, ∞₃  
-.
-
-Duplikacja ∞ niszczy brzeg kierunkowy i spójność przestrzeni  
-.
+Te trzy elementy tworzą **cykl interpretacyjny**,  
+który można stosować do dowolnych systemów złożonych.
 
 ---
 
-## 4. Warunki stabilności
+## 2. Topologia jako Język, Nie Fizyka
 
-Model definiuje trzy kluczowe warunki:
+W tym frameworku topologia jest **metaforą organizacji informacji**,  
+a nie opisem przestrzeni fizycznej.
 
-- **Λ_eff = Λ · τ**  
-- **ρ < ρ_krytyczne**  
-- **|ρ₁ – ρ₂| > ρ\*** dla aktywacji ΔS  
+- **Möbius** — jedność przeciwieństw, zmiana orientacji  
+- **Torus** — cykliczność, powrót informacji  
+- **Helisa** — skręt i kierunek  
+- **Sześcian** — stabilna struktura dyskretna  
 
-
-To pozwala wykrywać stabilne i niestabilne cykle informacji.
-
----
-
-## 5. Reguła ρ/ΔS — diagnoza założeń
-
-Jeśli w analizie problemu:
-
-- **ρ rośnie monotonicznie**, albo  
-- **ΔS rośnie w kolejnych krokach**,  
-
-to problem leży **w założeniach**, a nie w rachunku  
-.
-
-> „Wzrost ρ lub ΔS jest sygnałem, że diabeł siedzi w założeniach.”  
-
+To **język symboliczny**, nie geometria naukowa.
 
 ---
 
-## 6. Zawartość repozytorium
+## 3. Przepływ Informacji w Modelu
 
-```
-/axioms      — reguły i warunki stabilności
-/operators   — definicje operatorów
-/filter      — wersje filtra (2.0, 2.1, 2.2)
-/mapping     — mapowanie topologii na architekturę AI
-/examples    — przykłady (torus–Möbius, TIMDR)
-```
+Informacja przechodzi przez trzy etapy:
 
+1. **Λ — nadanie struktury**  
+2. **τ — transformacja skrętu**  
+3. **ρ — ocena stabilności**  
 
----
+Jeśli ρ rośnie — struktura traci spójność.  
+Jeśli ρ maleje — struktura stabilizuje się.
 
-## 7. Powiązania z innymi modelami
-
-- **TIMDR** — topologia informacji → dynamika czasu i rezonansu  
-- **FIELDCORE** — pole i rezonanse → fizyczna interpretacja operatorów  
-- **fundamental‑ai‑model** — mapowanie topologii na architekturę AI  
-- **MAPA‑PO‑HELU** — struktura materii jako zastosowanie operatorów i reguł  
+To **zasada interpretacyjna**, nie równanie fizyczne.
 
 ---
 
-## 8. Licencja
+## 4. Zastosowania (symboliczne)
 
-MIT License  
+Topologia Informacji służy do:
 
+- analizy złożonych idei,  
+- modelowania przejść,  
+- budowania struktur pojęciowych,  
+- interpretacji danych jako procesów,  
+- tworzenia abstrakcyjnych modeli rezonansu.
+
+Nie służy do:
+
+- przewidywania zjawisk fizycznych,  
+- analizy empirycznej,  
+- modelowania matematycznego.
+
+---
+
+## 5. Powiązania z innymi projektami
+
+Topologia Informacji jest fundamentem:
+
+- **TIMDR** — dynamika czasu i rezonansu  
+- **TRM** — redukcja i przejścia strukturalne  
+- **FIELDCORE** — struktura pola  
+- **MAPA‑PO‑HELU** — skręty materii  
+- **We‑Are‑Building‑Particles** — lokalne rezonanse  
+- **AstroCycles‑TIMDR** — cykle symboliczne  
+
+Każdy projekt korzysta z Λ–τ–ρ jako **języka pojęciowego**.
+
+---
+
+## 6. Struktura Repozytorium
+
+- `README.md` — opis główny  
+- `Λ/` — struktury  
+- `τ/` — transformacje  
+- `ρ/` — defekty i stabilność  
+- `diagrams/` — wizualizacje kon
