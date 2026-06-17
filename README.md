@@ -239,3 +239,17 @@ W praktyce:
 - ujemny k daje Mobiosa „zamykającego się w lewo”.
 
 Chiralność jest więc bezpośrednio kontrolowana przez znak parametru skrętu.
+### Orientation (inside vs outside)
+
+Handedness depends on the observer:
+
+- **From the outside (standard surface normal):**
+  - k > 0 → right‑handed twist
+  - k < 0 → left‑handed twist
+
+- **From the inside (after passing through the Mobios twist):**
+  - k > 0 → twist appears left‑handed
+  - k < 0 → twist appears right‑handed
+
+Mobios is a single‑sided surface, therefore internal and external
+orientation are reversed after one full traversal.
