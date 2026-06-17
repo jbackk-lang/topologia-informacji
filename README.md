@@ -99,3 +99,23 @@ Każdy projekt korzysta z Λ–τ–ρ jako **języka pojęciowego**.
 - `τ/` — transformacje  
 - `ρ/` — defekty i stabilność  
 - `diagrams/` — wizualizacje kon
+
+## Parametryzacja powierzchni **Mobios** (Giga‑3)
+
+Poniższy wzór opisuje zamkniętą powierzchnię topologicznie sferyczną,
+z dwoma przewężeniami (Giga‑1 i Giga‑2) oraz pełnym skrętem domykającym (Giga‑3).
+
+Parametry:
+- `u ∈ [0, 2π]` — kierunek główny (skręt / długość południka)
+- `v ∈ [-π/2, π/2]` — kierunek poprzeczny (szerokość kuli)
+- `a` — siła przewężeń (Giga‑1 / Giga‑2)
+- `k` — siła skrętu domykającego (Giga‑3)
+
+### **Równanie parametryczne Mobiosa**
+
+
+
+\[
+\begin{aligned}
+x(u,v) &= \bigl(1 + a \cos(2u)\cos v\bigr)\cos u \\
+y(u,v) &= \big
