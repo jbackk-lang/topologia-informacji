@@ -221,3 +221,21 @@ cos
 ∈
 𝑅
 .  $$
+### Handedness (chirality)
+
+Parametr **k** w równaniu Mobiosa określa kierunek skrętu powierzchni:
+
+- **k > 0** — skręt **prawostronny**  
+  (zgodny z regułą prawej dłoni; dodatni moment obrotowy)
+
+- **k < 0** — skręt **lewostronny**  
+  (zgodny z regułą lewej dłoni; ujemny moment obrotowy)
+
+- **k = 0** — brak skrętu  
+  (powierzchnia redukuje się do kuli z dwoma przewężeniami)
+
+W praktyce:
+- dodatni k daje Mobiosa „zamykającego się w prawo”,  
+- ujemny k daje Mobiosa „zamykającego się w lewo”.
+
+Chiralność jest więc bezpośrednio kontrolowana przez znak parametru skrętu.
