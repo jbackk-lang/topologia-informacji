@@ -1,3 +1,8 @@
+## 🔗 Wszystkie modele i repozytoria
+Pełna lista projektów znajduje się na stronie:
+https://jbackk-lang.github.io
+---
+
 # Topologia Informacji — Framework Koncepcyjny Λ–τ–ρ
 
 **Topologia Informacji** to centralny element stosu Λ–τ–ρ.  
